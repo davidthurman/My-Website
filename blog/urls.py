@@ -13,4 +13,6 @@ urlpatterns = [
 
 	#Detail page for a single topic
 	url(r'^topics/(?P<topic_id>\d+)/$', views.topic, name = 'topic'),
+
+	url(r'^about/', views.about, name = 'about'),
 	]
