@@ -13,6 +13,7 @@ class Topic(models.Model):
 class Entry(models.Model):
 	"""A post in a section of my blog"""
 	topic = models.ForeignKey(Topic)
+	title = models.TextField(default="Title")
 	text = models.TextField()
 	date_added = models.DateTimeField(auto_now_add = True)
 
