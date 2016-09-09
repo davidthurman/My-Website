@@ -1,0 +1,27 @@
+{% extends 'blog/base.html' %}
+
+{% block header %}
+	<h2>{{ project }}</h2>
+{% endblock header %}
+
+{% block content %}
+<image url="http://r.ddmcdn.com/s_f/o_1/cx_633/cy_0/cw_1725/ch_1725/w_720/APL/uploads/2014/11/too-cute-doggone-it-video-playlist.jpg"/>
+	<ul>
+		{% for picture in pictures %}
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3>
+						{{ picture.title }}
+						<!--{{ entry.date_added|date:'M d, Y H:i' }}-->
+					</h3>
+				</div>
+				<div class="panel-body">
+					<image url="http://r.ddmcdn.com/s_f/o_1/cx_633/cy_0/cw_1725/ch_1725/w_720/APL/uploads/2014/11/too-cute-doggone-it-video-playlist.jpg"/>
+				</div>
+			</div>
+		{% empty %}
+			There are no entries for this topic yet.
+		{% endfor %}
+	</ul>
+
+{% endblock content %}

@@ -15,4 +15,8 @@ urlpatterns = [
 	url(r'^topics/(?P<topic_id>\d+)/$', views.topic, name = 'topic'),
 
 	url(r'^about/', views.about, name = 'about'),
+
+	url(r'^projects/$', views.projects, name = 'projects'),
+
+	url(r'^projects/(?P<project_id>\d+)/$', views.project, name = 'project'),
 	]

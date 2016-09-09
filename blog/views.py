@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from .models import Topic
+from .models import Topic, Project
 # Create your views here.
 def index(request):
 	"""The home page for my website"""
@@ -22,3 +22,16 @@ def topic(request, topic_id):
 def about(request):
 	"""The about page for my website"""
 	return render(request, 'blog/about.html')
+
+def projects(request):
+	"""The Projects page for my website"""
+	projects = Project.objects.order_by('date_added')
+	context = {'projects': projects}
+	return render(request, 'blog/projects.html', context)
+
+def project(request, project_id):
+	"""A more in depth view of the project with pictures"""
+	project = Project.objects.get(id = project_id)
+	pictures = project.picture_set.order_by('id')
+	context = {'pictures': pictures, 'project': project}
+	return render(request, 'blog/project.html', context)

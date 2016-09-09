@@ -26,3 +26,24 @@ class Entry(models.Model):
 			return self.text[:50] + "..."
 		else:
 			return self.text
+
+class Project(models.Model):
+	"""A project of mine"""
+	title = models.TextField(default="Title")
+	text = models.TextField()
+	date_added = models.DateTimeField(auto_now_add = True)
+
+	def __str__(self):
+		"""Returns a string representation of the project"""
+		return self.title
+		
+class Picture(models.Model):
+	"""Pictures for a Project"""
+	project = models.ForeignKey(Project)
+	url = models.TextField()
+	title = models.TextField()
+
+	def __str__(self):
+		"""Returns string representation of the Picture"""
+		return self.title
+		
