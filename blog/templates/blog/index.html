@@ -1,5 +1,23 @@
 {% extends "blog/baseWithoutHeader.html" %}
+{% load bootstrap3 %}
+{% load staticfiles %}
+
+{% block header %}
+	<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock header %}
 
 {% block content %}
+	<div style="background-color:blue;">
+		<h1>Test</h1>
+		<h2>TESTING TESTING TESTING</h2>
+	</div>
+	<!-- <div class="container">
+		<div class="tag">Featured</div>
+
+   		<img class="bg" src="{% static "images/background.jpg" %}"/>
+   		<div>
+   			<h1>Test</h1>
+   		</div>
+	</div> -->
 	
 {% endblock content %}

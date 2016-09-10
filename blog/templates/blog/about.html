@@ -1,1 +1,171 @@
-{% extends "blog/base.html" %}
+{% extends "blog/baseWithoutHeader.html" %}
+{% load staticfiles %}
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+{% block content %}
+	<div class="panel panel-info"> <!-- panel-info -->
+	      <div class="panel-heading">
+	        <h3 class="panel-title">Skills</h3>
+	      </div>
+	      <div class="panel-body">
+	      	<div>
+
+		      	<div class="panel panel-success skillsSections"> <!-- panel-success -->
+			      <div class="panel-heading">
+			        <h3 class="panel-title">Languages</h3>
+			      </div>
+			      <div class="panel-body">
+			      	<div class="skillsList">
+			      		<ul>
+				      		<li>Swift</li>
+				      		<li>Python</li>
+				      		<li>C#</li>
+				      		<li>Java</li>
+				      	</ul>
+			      	</div>
+			      	<div class="skillsList">
+			      		<ul>
+			      			<li>SQL</li>
+			      			<li>PHP</li>
+			      			<li>HTML</li>
+			      			<li>Javascript</li>
+			      			
+			      		</ul>	
+				    </div>
+				    <div class="skillsList">
+			      		<ul>
+			      			<li>CSS</li>
+			      			<li>C++</li>
+			      			<li>Objective-C</li>
+			      			<li>Android</li>
+			      		</ul>	
+				    </div>
+			      </div>
+			 	</div>
+			      <div class="panel panel-warning skillsSections"> <!-- panel-warning -->
+				      <div class="panel-heading">
+				        <h3 class="panel-title">Frameworks, Source Control, Tools, Misc.</h3>
+				      </div>
+				      <div class="panel-body">
+				      	<div class="skillsList">
+							<ul>
+								<li>Django</li>
+								<li>Laravel</li>
+								<li>Git</li>
+								<li>Github</li>
+							</ul>
+						</div>
+						<div class="skillsList">
+							<ul>
+								<li>Mercurial</li>
+								<li>Bitbucket</li>
+								<li>Project Management</li>
+								<li>Agile Methodologies</li>
+							</ul>
+						</div>
+						<div class="skillsList">
+							<ul>
+								<li>Scrum</li>
+								<li>Xcode</li>
+								<li>Visual Studio</li>
+								<li>Android Studio</li>
+							</ul>
+						</div>
+				      </div>
+					</div>
+
+
+					<div class="panel panel-danger specialtySection"> <!-- panel-danger -->
+				      <div class="panel-heading">
+				        <h3 class="panel-title">Specialties</h3>
+				      </div>
+				      <div class="panel-body">
+				  		<div class="skillsList">
+							<ul>
+								<li>iOS Development</li>
+								<li>Python Applications</li>
+								<li>.NET (UWP)</li>
+								<li>Video Compression</li>
+							</ul>
+						</div>
+				     </div>
+				 </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="panel panel-primary "> <!-- panel-primary -->
+	    <div class="panel-heading">
+	        <h3 class="panel-title">About Me</h3>
+	    </div>
+	    <div class="panel-body">
+
+	      	<div class="panel panel-default personalSections ">
+				<div class="panel-heading" style="background-color: #ccccff; color:#7300e6"><h3 class="panelTitle">Music</h3></div>
+				<div class="panel-body">
+				    <div class="skillsList">
+						<ul>
+							<li>Pink Floyd</li>
+							<li>Bob Dylan</li>
+							<li>Billy Joel</li>
+							<li>Led Zeppelin</li>
+							<li>Rush</li>
+							<li>Fleetwood Mac</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default personalSections">
+				<div class="panel-heading" style="background-color: #ffddcc; color:#b35900"><h3 class="panelTitle">Shows</h3></div>
+				<div class="panel-body">
+				    <div class="skillsList">
+						<ul>
+							<li>Breaking Bad</li>
+							<li>Silicon Valley</li>
+							<li>How I Met Your Mother</li>
+							<li>The Walking Dead</li>
+							<li>Cosmos</li>
+							<li>The Office</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default personalSections">
+				<div class="panel-heading" style="background-color: #ffccf2; color:#800060"><h3 class="panelTitle">Movies</h3></div>
+				<div class="panel-body">
+				    <div class="skillsList">
+						<ul>
+							<li>Interstellar</li>
+							<li>Guardians of the Galaxy</li>
+							<li>Lord of the Rings</li>
+							<li>Harry Potter</li>
+							<li>Deadpool</li>
+							<li>Warrior</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default personalSections">
+				<div class="panel-heading" style="background-color: #d9f2e6; color:#2d8659"><h3 class="panelTitle">Books</h3></div>
+				<div class="panel-body">
+				    <div class="skillsList">
+						<ul>
+							<li>The Name of the Wind</li>
+							<li>The Wise Man's Fear</li>
+							<li>Harry Potter</li>
+							<li>A Brief History of Time</li>
+							<li>1984</li>
+							<li>Meditations</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	    </div>
+	</div>
+</div>
+	
+
+{% endblock content %}
