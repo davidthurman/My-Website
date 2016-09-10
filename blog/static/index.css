@@ -1,0 +1,9 @@
+img.menuIcon {
+	height: 3.5%;
+	width: 3.5%;
+}
+
+img.projectPic {
+    text-align: center;
+    border: 3px solid green;
+}

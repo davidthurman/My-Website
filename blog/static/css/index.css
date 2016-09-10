@@ -1,0 +1,11 @@
+img.menuIcon {
+	height: 3.5%;
+	width: 3.5%;
+}
+img.projectPic {
+    display: block;
+    margin: auto;
+}
+h3.projectTitle {
+	text-align: center;
+}

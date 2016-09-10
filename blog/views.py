@@ -25,7 +25,7 @@ def about(request):
 
 def projects(request):
 	"""The Projects page for my website"""
-	projects = Project.objects.order_by('date_added')
+	projects = Project.objects.order_by('-date_added')
 	context = {'projects': projects}
 	return render(request, 'blog/projects.html', context)
 
