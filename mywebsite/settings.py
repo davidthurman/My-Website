@@ -141,7 +141,7 @@ if os.getcwd() == '/app':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
     # Allow only Heroku to host the project.
-    ALLOWED_HOSTS = ['agile-anchorage-96310.herokuapp.com']
+    ALLOWED_HOSTS = ['davidthurman.herokuapp.com']
     DEBUG = False
 
     # Static asset configuration
