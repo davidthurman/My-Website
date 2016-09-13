@@ -34,6 +34,7 @@ img.homescreenPic {
     padding: 20px;
     background: white;
     box-shadow: 0 0 20px black;
+    overflow:auto;
 }
 .pageWrap {
     position: relative;
@@ -51,7 +52,7 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
-img.bg {
+.bg {
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 1024px;
@@ -64,8 +65,17 @@ img.bg {
   position: fixed;
   top: 0;
   left: 0;
-}
 
+  background: url(background.jpg) no-repeat center center fixed;
+
+  transition: all 1s ease;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.bg:hover{
+  -webkit-filter:grayscale(0%);
+  filter(grayscale(0%);
+}
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
   img.bg {
     left: 50%;
