@@ -87,43 +87,10 @@ html {
 	float: left;
 }
 
-.skillsSections {
-	float:left;
-	width: 38%; 
-	height: 100%;
-}
-
-.specialtySection {
-	float:left;
-	width: 24%; 
-	height: 100%;
-}
-
-.aboutMeSections {
-	float:left;
-	width: 33%; 
-	height: 100%;
-}
-
-.personalSections {
-	float:left;
-	width: 25%; 
-	height: 100%;
-}
-
-.music{
-  background-color: #ccccff;
-}
-
-.panelTitle {
-	font-family: inherit;
-	font-weight: 500;
-	line-height: 1.1;
-	margin-top: 0;
-	margin-bottom: 0;
-	font-size: 16px;
-}
 p.workExperienceJob {
+  font-size: 32px !important;
+}
+#x {
   font-size: 32px;
 }
 .workExperienceTime {
