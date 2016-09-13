@@ -9,37 +9,54 @@
 <div class="backgroundWrapper">
 	<div class="bg"/>
 </div>
-<div style="display:block;margin: auto; ">
-	<div class="contentWrapper" style="float:left;display:inline-block; width:35%; margin:7.5% 7.5%;">
-		<h3 style="text-align: center">Languages</h3>
-		<div class="skillsList" style="float:left;">
-				      		<ul>
-					      		<li>Swift</li>
-					      		<li>Python</li>
-					      		<li>C#</li>
-					      		<li>Java</li>
-					      	</ul>
-				      	</div>
-				      	<div class="skillsList" style="float:left;">
-				      		<ul>
-				      			<li>SQL</li>
-				      			<li>PHP</li>
-				      			<li>HTML</li>
-				      			<li>Javascript</li>
-				      			
-				      		</ul>	
-					    </div>
-					    <div class="skillsList" style="float:left;">
-				      		<ul>
-				      			<li>CSS</li>
-				      			<li>C++</li>
-				      			<li>Objective-C</li>
-				      			<li>Android</li>
-				      		</ul>	
-					    </div>
+
+<div style="display:flex;margin:0 auto;">
+	<div class="contentWrapper" id="workExperience">
+		<h3 style="text-align: center">Work Experience</h3>
+		<p style="font-size: 20px;">DVIDS</p>
+		<p style="font-size: 12px;">&nbsp;&nbsp;4/16 - Present</p>
+		<p style="margin-left: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+
+		<p style="font-size: 20px;">DevelAppMe</p>
+		<p style="font-size: 12px;">&nbsp;&nbsp;9/15 - 12/15</p>
+		<p style="margin-left: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+		
 	</div>
-	<div class="contentWrapper" style = "float:left;display:inline-block; width:35%; margin:7.5% 7.5%;">
-		<h3 style="text-align: center">Frameworks, Source Control, Tools, Misc.</h3>
+
+	<div class="contentWrapper" id="myPicWrapper">
+		<img src="{% static "images/personalPic.jpg" %}" class="personalPic"/>
+		<p id="name">David Thurman</p>
+		<p id="jobTitle">Application Developer</p>
+	</div>
+	
+</div>
+
+<div style="display:flex;margin: auto; ">
+	<div class="contentWrapper" id="languageWrapper">
+		<h3 class="contentTitle">Languages</h3>
+		<div class="skillsList">
+      		<ul>
+	      		<li>Swift</li>
+	      		<li>Python</li>
+	      		<li>C#</li>
+	      		<li>Java</li>
+	      		<li>Objective-C</li>
+      			<li>Android</li>
+	      	</ul>
+      	</div>
+      	<div class="skillsList">
+      		<ul>
+      			<li>SQL</li>
+      			<li>PHP</li>
+      			<li>HTML</li>
+      			<li>Javascript</li>
+      			<li>CSS</li>
+      			<li>C++</li>
+      		</ul>	
+	    </div>
+	</div>
+	<div class="contentWrapper" id="frameworksWrapper">
+		<h3 class="contentTitle">Frameworks, Source Control, Tools, Misc.</h3>
 		<div style="text-align: center">
 			<div class="skillsList" style="float:left">
 				<ul>
@@ -63,20 +80,7 @@
 			</div>
 		</div>
 	</div>
-</div>
-<div style="display:block;margin:0 auto;">
-	<div class="contentWrapper" style="float:left;display:inline-block; width:50%; margin:3% 7.5%;">
-		<h3 style="text-align: center">Work Experience</h3>
-		<p style="font-size: 20px;">DVIDS</p>
-		<p style="font-size: 12px;">&nbsp;&nbsp;4/16 - Present</p>
-		<p style="margin-left: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-
-		<p style="font-size: 20px;">DevelAppMe</p>
-		<p style="font-size: 12px;">&nbsp;&nbsp;9/15 - 12/15</p>
-		<p style="margin-left: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-		
-	</div>
-	<div class="contentWrapper" style = "float:left;display:inline-block; width:20%; margin:15% 7.5%;">
+	<div class="contentWrapper" id="specialtiesWrapper">
 		<h3 style="text-align: center">Specialties</h3>
 		<div style="text-align: center">
 			<div class="skillsList" style="float:left">
@@ -90,5 +94,6 @@
 		</div>
 	</div>
 </div>
+
 
 {% endblock content %}

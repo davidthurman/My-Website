@@ -28,13 +28,73 @@ img.homescreenPic {
 .contentWrapper {
   position:relative;
   z-index:2;
-  position: relative;
   width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 20px black;
+  overflow:auto;
+  display:inline-block; 
+  width:80%; 
+  margin:3% 5%;
+  transition: all 1s ease;
+  -webkit-filter: opacity(80%);
+  filter: opacity(80%);
+}
+.contentWrapper:hover {
+  -webkit-filter:opacity(100%);
+  filter(opacity(100%));
+}
+#myPicWrapper {
+  width: 200px;
     margin: 50px auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 0 20px black;
-    overflow:auto;
+    width:20%; 
+    margin:3% 5%;
+    align-items:stretch;
+}
+#languageWrapper {
+  float:left;
+  display:inline-block; 
+  width:25%; 
+  margin:5% 5%;
+
+}
+#workExperience {
+  width:60%; 
+}
+#frameworksWrapper {
+  display:inline-block; 
+  width:30%; 
+  margin:5% 5%;
+  align-items:stretch;
+}
+#specialtiesWrapper {
+  float:right;
+  display:inline-block; 
+  width:20%; 
+  margin:5% 5%;
+}
+.contentTitle {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.personalPic {
+  border-radius: 100%;
+  max-width: 100%;
+    height: auto;
+    margin: 6% 0%;
+
+}
+#jobTitle {
+  font-size: 32px;
+  text-align: center;
+  margin: 14% 0%;
+
+}
+#name {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
 }
 .pageWrap {
     position: relative;
@@ -65,17 +125,17 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-
+  background-size: cover;
   background: url(background.jpg) no-repeat center center fixed;
 
-  transition: all 1s ease;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+/*  transition: all 1s ease;
+  -webkit-filter: opacity(60%);
+  filter: opacity(60%);*/
 }
-.bg:hover{
-  -webkit-filter:grayscale(0%);
-  filter(grayscale(0%);
-}
+/*.bg:hover{
+  -webkit-filter:opacity(100%);
+  filter(opacity(100%));
+}*/
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
   img.bg {
     left: 50%;
