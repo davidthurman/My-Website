@@ -36,7 +36,7 @@
 		<h3 style="text-align: center">Specialties</h3>
 		<div style="text-align: center">
 			<div class="skillsList" style="float:left">
-				<ul >
+				<ul class="specialties">
 					<li style="margin-top: 30px">iOS Development</li>
 					<li style="margin-top: 30px">Python Applications</li>
 					<li style="margin-top: 30px">.NET (UWP)</li>
@@ -77,31 +77,51 @@
 	
 	
 </div>
-<div class="contentWrapper" id="frameworksWrapper">
+
+
+<div style="display:flex;margin: auto; ">
+	<div class="contentWrapper" id="frameworksWrapper">
 		<h3 class="contentTitle">Frameworks, Source Control, Tools, Misc.</h3>
 		<div style="text-align: center">
-			<div class="skillsList" style="float:left">
-				<ul>
+			<div class="skillsList" >
+				<ul class="frameworks">
 					<li>Django</li>
 					<li>Laravel</li>
 					<li>Git</li>
 					<li>Github</li>
-					<li>Scrum</li>
-					<li>Xcode</li>
+					
 				</ul>
 			</div>
-			<div class="skillsList" style="float:right">
-				<ul>
+			<div class="skillsList" >
+				<ul class="frameworks">
 					<li>Mercurial</li>
 					<li>Bitbucket</li>
 					<li>Project Management</li>
 					<li>Agile Methodologies</li>
+					
+				</ul>
+			</div>
+			<div class="skillsList">
+				<ul class="frameworks">
+					<li>Scrum</li>
+					<li>Xcode</li>
 					<li>Visual Studio</li>
 					<li>Android Studio</li>
 				</ul>
 			</div>
 		</div>
 	</div>
-
+	<div class="contentWrapper" id="specialtiesWrapper">
+			<h3 style="text-align: center">Contact Me</h3>
+			<div style="text-align: center">
+				<div class="skillsList" style="float:left">
+					<p class="contactTitle">Email</p>
+					<p class="contactInfo">davidthurmanwork@gmail.com</p>
+					<p class="contactTitle">Phone</p>
+					<p class="contactInfo">678-699-4527</p>
+				</div>
+			</div>
+		</div>
+</div>
 
 {% endblock content %}
