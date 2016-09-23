@@ -93,6 +93,7 @@ ul {
 ul.specialties {
   margin-left: 0px;
   margin-right: 10px;
+  list-style-type: none;
 }
 ul.frameworks {
   margin-left: 55px;
@@ -116,16 +117,16 @@ ul.frameworks {
   font-size: 14px;
   margin-top: 10px;
 }
-#jobTitle {
+#name {
   font-size: 32px;
   text-align: center;
-  margin: 14% 0%;
+  margin: 18% 0%;
 
 }
-#name {
+#jobTitle {
   text-align: center;
-  margin-top: 20px;
-  font-size: 20px;
+  margin-top: 40px;
+  font-size: 18px;
 }
 .pageWrap {
     position: relative;
@@ -163,3 +164,4 @@ p.workExperienceJob {
 .workExperienceDetails {
 
 }
+
